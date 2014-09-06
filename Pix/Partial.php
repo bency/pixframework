@@ -189,6 +189,8 @@ class Pix_Partial
             // 是 array 的話, 就從 array 取出設定
             $cache_id = $options['cache_id'];
             $cache = $options['cache'];
+        } else {
+            $cache = $cache_id = null;
         }
 
         if (!($cache instanceof Pix_Cache)) {
